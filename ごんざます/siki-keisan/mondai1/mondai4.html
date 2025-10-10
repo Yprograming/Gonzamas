@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ごんざます</title>
+    <script>
+        // 正しいパスワードを設定
+        const kotae= "３00";
+        const kotaee= "３００";
+
+        // パスワードを確認する関数
+        function checkPassword() {
+            const inputPassword = document.getElementById("password").value;
+
+            // パスワードを比較
+            if (inputPassword === kotae,kotaee) {
+                alert("正解です！");
+                // 認証成功時の処理
+                window.location.href = "mondai5.html"; // 遷移先ページ
+            } else {
+                alert("答えが間違ってるよ！/nヒント()から先に計算する");
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="../../img/logo.png" width="300"heigeit="200">
+    <p>500-(500-300)=?</p>
+    <input id="password" placeholder="パスワード">
+    <button onclick="checkPassword()">送信</button>
+</body>
+</html>
