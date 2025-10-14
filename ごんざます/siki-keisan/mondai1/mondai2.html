@@ -7,14 +7,13 @@
     <script>
         // 正しいパスワードを設定
         const kotae= "520";
-        const kotaee= "520";
 
         // パスワードを確認する関数
         function checkPassword() {
             const inputPassword = document.getElementById("password").value;
 
             // パスワードを比較
-            if (inputPassword === kotae,kotaee) {
+            if (inputPassword === kotae) {
                 alert("正解です！");
                 // 認証成功時の処理
                 window.location.href = "mondai3.html"; // 遷移先ページ
@@ -31,4 +30,5 @@
     <button onclick="checkPassword()">送信</button>
 </body>
 </html>
+
 
