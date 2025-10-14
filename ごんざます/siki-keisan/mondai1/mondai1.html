@@ -7,14 +7,12 @@
     <script>
         // 正しいパスワードを設定
         const correctPassword = "300";
-        const correctPasswordd = "３００";
-
         // パスワードを確認する関数
         function checkPassword() {
             const inputPassword = document.getElementById("password").value;
 
             // パスワードを比較
-            if (inputPassword === correctPassword,correctPasswordd) {
+            if (inputPassword === correctPassword) {
                 alert("正解です！");
                 // 認証成功時の処理
                 window.location.href = "mondai2.html"; // 遷移先ページ
@@ -31,3 +29,4 @@
     <button onclick="checkPassword()">送信</button>
 </body>
 </html>
+
